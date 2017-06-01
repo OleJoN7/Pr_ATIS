@@ -1,0 +1,49 @@
+.popup-wrap {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  background: rgba(0, 0, 0, 0.6);
+  .popup {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    @include transform(translateX(-50%));
+    background: rgba(1, 125, 249, 0.7);
+    width: 30%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 40%;
+    border: 2px solid #e7e7e7;
+    border-radius: 30px;
+    p {
+      @include font-black(7rem);
+      color: #fff;
+      @include transform(translateY(50%) rotate(90deg));
+      @include transition(1s ease-in-out);
+      &:hover {
+        @include transform(scale(1.5) rotate(90deg) translate(5%, 0));
+        @include transition(1s ease-in-out);
+      }
+    }
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #fff;
+      border: none;
+      width: 20px;
+      height: 20px;
+      @include border-radius(50%);
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+}
+

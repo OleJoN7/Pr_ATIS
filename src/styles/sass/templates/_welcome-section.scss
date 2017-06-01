@@ -1,0 +1,80 @@
+.welcome-section {
+  background: url('../../images/welcome-bg.jpg') center no-repeat;
+  background-size: cover;
+  @include font-regular(1rem);
+  .welcome-content {
+    padding-bottom: 325px;
+    .welcome-img-wrap {
+      width: 516px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-bottom: 45px;
+    }
+    p {
+      padding-bottom: 55px;
+      @include font-regular(1rem);
+      color: $primary-color;
+      span {
+        padding: 0 20px;
+      }
+    }
+  }
+  .welcome-form {
+    background: $primary-color;
+    background-size: cover;
+    padding: 45px 0 55px;
+    .form-list {
+      justify-content: space-between;
+      li {
+        width: calc(100% / 8);
+        margin-left: 25px;
+        position: relative;
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 18px;
+          height: 18px;
+        }
+        label {
+          text-align: left;
+          display: block;
+          color: $secondary-color;
+          padding-left: 30px;
+        }
+        input {
+          width: 100%;
+          padding-top: 10px;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid #379aff;
+          color: $secondary-color;
+        }
+        .submit-btn {
+          border: none;
+          background: #fff url('../../images/search.png') 50% no-repeat;
+          height: 47px;
+          width: 47px;
+          @include border-radius(50%);
+        }
+      }
+      .city-block {
+        width: 20%;
+      }
+      .search-block {
+        width: 5%;
+      }
+    }
+  }
+}
+
+@for $i from 0 to 7 {
+  $step: 16.7%;
+  .form-list {
+    li:nth-child(#{$i+1}):before {
+      background: url('../../images/sprite.png') no-repeat ($step * $i) 0;
+    }
+  }
+}

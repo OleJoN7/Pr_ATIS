@@ -1,0 +1,144 @@
+.places-section {
+  margin-bottom: 30px;
+}
+
+.places-header {
+  padding: 80px 0;
+  color: #bfc5d2;
+  span {
+    padding: 0 25px;
+  }
+}
+
+.places-section .places-list {
+  @include flex-wrap(wrap);
+  li {
+    position: relative;
+    div {
+      position: relative;
+    }
+    h3 {
+      position: absolute;
+      color: $secondary-color;
+      @include font-bold(2.25rem);
+      bottom: 5%;
+      left: 5%;
+    }
+  }
+  .thessa-halk-block {
+    @include flex-basis(30%);
+    padding-right: 15px;
+    margin-bottom: 30px;
+    div:first-child {
+      margin-bottom: 30px;
+    }
+  }
+  .athens-mykonos-block {
+    @include flex-basis(30%);
+    padding-left: 15px;
+    margin-bottom: 30px;
+    div:first-child {
+      margin-bottom: 30px;
+    }
+  }
+  .crete-block {
+    @include flex-basis(40%);
+    margin-bottom: 30px;
+    @include transition(.5s all linear);
+    .places-container {
+      width: 100%;
+      height: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    img {
+      height: 100%;
+    }
+  }
+  .meteora-block {
+    @include flex-basis(50%);
+    padding-right: 15px;
+    .places-container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .myrtos-block {
+    @include flex-basis(50%);
+    padding-left: 15px;
+    .places-container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.places-section .places-list .hover-block {
+  @include transition(.5s all linear);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #019bfc;
+  opacity: 0;
+  div {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    @include transform(translateX(-50%));
+    width: 100%;
+    max-width: 100%;
+  }
+  h3 {
+    position: static;
+    color: $secondary-color;
+    @include font-bold(3.75rem);
+  }
+  .btn-list {
+
+    li {
+      a {
+        @include font-bold(.75rem);
+        color: $secondary-color;
+        border: 1px solid #59bcfd;
+        background: transparent;
+        @include border-radius(30px);
+        margin: 0 10px;
+        display: inline-block;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+.crete-block .hover-block {
+  margin: 0 15px;
+}
+
+.places-list li .place-title {
+  opacity: 1;
+  @include transition(.5s all linear);
+}
+
+.places-list .crete-block:hover .hover-block {
+  opacity: 0.68;
+}
+
+.places-list .meteora-block:hover .hover-block {
+  opacity: 0.68;
+}
+
+.places-list .myrtos-block:hover .hover-block {
+  opacity: 0.68;
+}
+
+.places-section .places-list li div:hover .hover-block {
+  opacity: 0.68;
+}
+
+.places-list li div:hover .place-title {
+  opacity: 0;
+}
+

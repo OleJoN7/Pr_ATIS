@@ -1,0 +1,17 @@
+@mixin font-regular ($size) {
+  font:$size "RobotoR",sans-serif;
+}
+@mixin font-bold ($size) {
+  font:$size "RobotoBold",sans-serif;
+}
+@mixin font-black ($size) {
+  font:$size "RobotoBlack",sans-serif;
+}
+@mixin font-street ($size) {
+  font:$size "Street",sans-serif;
+}
+@mixin font-thin ($size) {
+  font:$size "RobotoThin",sans-serif;
+}
+
+

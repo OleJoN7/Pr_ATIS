@@ -1,0 +1,18 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .form-list label {
+    @include font-regular(.87rem);
+  }
+  .places-section .places-list li h3 {
+    font: 2rem "RobotoBold", sans-serif;
+  }
+  .places-section .places-list .hover-block h3 {
+    font: 2rem "RobotoBold", sans-serif;
+  }
+  .places-section .places-list .hover-block .btn-list li a {
+    font: 0.6rem "RobotoBold", sans-serif;
+    padding: 5px 15px;
+  }
+}

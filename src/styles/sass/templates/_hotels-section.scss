@@ -1,0 +1,62 @@
+.hotels-section {
+  background: #f9f9f9;
+  .hotels-header {
+    padding: 80px 0;
+    @include font-regular(1rem);
+    color: #bfc5d2;
+    span {
+      padding: 0 25px;
+    }
+  }
+}
+
+.hotel-list {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  > li {
+    width: 370px;
+    height: 435px;
+    position: relative;
+    background: #bfc5d2;
+    margin-bottom: 50px;
+    .hotel-description {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 30%;
+      background: #fff;
+      padding: 25px 40px 0;
+    }
+  }
+}
+
+.hotel-description {
+  .hotel-title {
+    @include font-regular(1.125rem);
+    color: #697899;
+    p {
+      padding-bottom: 20px;
+    }
+  }
+  .hotel-stars-list {
+    text-indent: -9999px;
+    li {
+      width: 15px;
+      height: 15px;
+      margin-right: 3px;
+      background: url('../../images/star.png') 50% no-repeat;
+    }
+  }
+  .hotel-price-days {
+    p:first-child {
+      @include font-thin(2.25rem);
+      color: #697899;
+    }
+    p:last-child {
+      @include font-regular(.875rem);
+      color: #d1d5df;
+    }
+  }
+}

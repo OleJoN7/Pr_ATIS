@@ -1,0 +1,130 @@
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+  .main-header .main-nav {
+    display: none;
+    float: none;
+    .nav-list {
+      @include display-flex();
+      @include flex-direction(column);
+      margin-top: 50px;
+    }
+  }
+  .main-header .hide-show-btn {
+    display: block;
+    margin-right: 10px;
+  }
+  .btn-host {
+    display: none;
+    positioN: absolute;
+    left: 48.5%;
+    top: 7%;
+    @include transform(translateX(-48.5%));
+  }
+  .main-header .main-nav .nav-list li {
+    float: none;
+    border-radius: 0;
+  }
+  .main-header .main-nav .nav-list li:hover {
+    background: rgba(255, 240, 115, 0.7);
+    box-shadow: none;
+  }
+  .main-header .main-nav .nav-list li a:hover {
+    color: rgb(3, 220, 245);
+  }
+
+  html {
+    font-size: 12px;
+  }
+  .main-header .main-nav .nav-list li {
+    padding: 10px 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+  .welcome-section .welcome-form .form-list .city-block {
+    width: 50%;
+  }
+  .welcome-section .welcome-form .form-list {
+    @include flex-wrap(wrap);
+  }
+  .welcome-section .welcome-form .form-list li {
+    width: calc(100% / 2);
+    margin: 0 0 5px 0;
+    padding-right: 30px;
+  }
+  .welcome-section .welcome-form .form-list .search-block {
+    position: absolute;
+    bottom: -10%;
+    right: 45%;
+  }
+  .places-section .places-list li h3 {
+    font: 2rem "RobotoBold", sans-serif;
+  }
+  .places-section .places-list .hover-block h3 {
+    font: 2rem "RobotoBold", sans-serif;
+  }
+  .places-section .places-list .hover-block .btn-list li a {
+    font: 1rem "RobotoBold", sans-serif;
+    padding: 2px 10px;
+  }
+  .places-section .places-list {
+    @include flex-direction(column);
+    li {
+      margin-bottom: 15px !important;
+      padding: 0 !important;
+    }
+  }
+  .places-section .places-list .thessa-halk-block div:first-child {
+    margin-bottom: 15px;
+  }
+  .places-section .places-list .athens-mykonos-block div:first-child {
+    margin-bottom: 15px;
+  }
+  .crete-block .hover-block {
+    margin: 0;
+  }
+  .meteora-block .hover-block {
+    margin-right: 0;
+  }
+  .myrtos-block .hover-block {
+    margin: 0;
+  }
+  .places-section .places-list .crete-block .places-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .places-section .places-list .myrtos-block .places-container {
+    padding-left: 0;
+  }
+  .places-section .places-list .meteora-block .places-container {
+    padding-right: 0;
+  }
+
+  .hotels-section .hotels-header {
+    padding: 30px 0;
+    h4 {
+      @include font-regular(1rem);
+    }
+  }
+  .slider-caption {
+    font: 2.63rem "RobotoBlack", sans-serif;
+    line-height: 35px;
+    padding-bottom: 30px;
+  }
+  .slider-caption span {
+    font: 2.63rem "Street", sans-serif;
+  }
+  .slider-text {
+    font: 1.125rem "RobotoR", sans-serif;
+    line-height: 22px;
+  }
+  .popup-wrap .popup {
+    background: transparent;
+    border: none;
+  }
+  .popup-wrap .popup .close-btn {
+    top: 0;
+  }
+}

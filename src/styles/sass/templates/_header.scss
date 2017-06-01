@@ -1,0 +1,40 @@
+.main-header {
+  padding: 75px 0 185px;
+  overflow: hidden;
+  .logo-block {
+    width: 85px;
+    height: 30px;
+    float: left;
+    h1 {
+      text-indent: -9999px;
+    }
+  }
+  .main-nav {
+    float: right;
+    .nav-list li {
+      float: left;
+      padding: 10px 15px;
+      @include transition(.5s linear);
+      @include border-radius(30px);
+      a {
+        color: #697899;
+        @include transition(.5s linear);
+        &:hover {
+          color: $primary-color;
+          @include transition(.5s linear);
+        }
+      }
+      &:hover {
+        background: #fff;
+        @include transition(.5s linear);
+        @include box-shadow(0 0 10px 5px #deedfe);
+      }
+    }
+  }
+  .btn {
+    float: right;
+  }
+  .hide-show-btn {
+    display: none;
+  }
+}

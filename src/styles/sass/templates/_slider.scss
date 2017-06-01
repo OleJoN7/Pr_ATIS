@@ -1,0 +1,65 @@
+.slider-section {
+  padding: 300px 0 270px;
+  background: url('../../images/slider-bg.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.slider-caption {
+  @include font-black(5.63rem);
+  line-height: 102px;
+  color: $secondary-color;
+  padding-bottom: 90px;
+  span {
+    @include font-street(5.63rem);
+    color: #0dcfff;
+  }
+}
+
+.slider-text {
+  @include font-regular(1.125rem);
+  color: $secondary-color;
+  line-height: 42px;
+  padding-bottom: 45px;
+}
+
+.slider-author {
+  @include font-bold(1.125rem);
+  color: $secondary-color;
+  padding-bottom: 45px;
+}
+
+.carousel-inner {
+  width: 70%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+  @include flex-direction(column);
+}
+
+.carousel-indicators li {
+  max-width: 5px;
+  height: 5px;
+  @include border-radius(50%);
+  background-color: $secondary-color;
+}
+
+.carousel-indicators .active {
+  background-color: #0dcfff;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  display: inline-block;
+  width: 48px;
+  height: 94px;
+}
+
+.carousel-control-prev-icon {
+  background: url('../../images/left-arrow.png') 50% no-repeat;
+}
+
+.carousel-control-next-icon {
+  background: url('../../images/right-arrow.png') 50% no-repeat;
+}
+
